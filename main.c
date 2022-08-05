@@ -17,10 +17,11 @@ int main(int argc __attribute__((unused)), char **argv __attribute__((unused)))
 	/* check if we stay or exit the loop */
 	while (status_return && n != EOF) /* EOF has a value of -1, so it is an int */
 	{
+		size = 0; /* set to 0 in every new input */
 		/* return 1 if the file in the argument refers to the terminal */
 		status_return = isatty(STDIN_FILENO);
 		if (status_return)
-			write(STDOUT_FILENO, "#Shell_CL$ ", 11); /* print the prompt to stdout */
+			write(STDOUT_FILENO, "#(ಠ_ಠ)->$ ", 14); /* print the prompt to stdout */
 		/* if we recieve Ctrl + c ignore it and print a new line and the prompt */
 		signal(SIGINT, sigintH);
 		/* store the input_stdin string or check for EOF or any error */
@@ -38,7 +39,6 @@ int main(int argc __attribute__((unused)), char **argv __attribute__((unused)))
 		}
 		/* split the input_stdin string into a array of arguments (tokens) */
 		arguments = hsh_tokenizer(input_stdin);
-		/*  */
 		if (*arguments[0] == '\0')
 			continue;
 		/* pass the array of arguments (tokens) to choose from builtin functions */
