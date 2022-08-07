@@ -8,6 +8,10 @@
 #include <errno.h>
 #include <sys/wait.h>
 
+#define BUFSIZE 64 /* constant buffer to use in tokenizer functions*/
+#define DELIM_I " \t\n" /* delimiters to check in hsh_tokenizer */
+#define DELIM_P ":" /* delimiter to check in tokenizer_path*/
+
 /**
  * struct choose_builtin - Builtin commands struct
  * @name_builtin: Name of builtin command
