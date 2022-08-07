@@ -30,7 +30,7 @@ char **hsh_tokenizer(char *input)
 		/* reallocate the array of tokens if necessary*/
 		if (position >= buffer)
 		{
-			newBbuffer = BUFSIZE * 2;
+			newBuffer = BUFSIZE * 2;
 			backup_tokens = tokens;
 			tokens = _realloc(tokens, buffer, newBuffer * sizeof(char *));
 			if (tokens == NULL)

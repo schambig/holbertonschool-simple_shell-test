@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * hsh_cd - change directory
- * @args: argument array
- * @input_stdin: input of stdin
- * @exit_status: exit status
+ * hsh_cd - Change directory
+ * @args: Array of tokens
+ * @input_stdin: Input from stdin
+ * @exit_status: Exit status
  * Return: 1 (success)
  */
 int hsh_cd(char **args, char *input_stdin, int *exit_status)
 {
-	int stat;
-	char s[128];
+	int stat; /* to check chdir() return value */
+	char s[128]; /* buffer to save */
 
 	getcwd(s, sizeof(s));
 

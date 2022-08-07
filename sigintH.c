@@ -9,6 +9,6 @@ void sigintH(int signum)
 {
 	if (signum == SIGINT)
 	{
-		write(2, "\n#Shell_CL$ ", 11);
+		write(2, "\n#(ಠ_ಠ)->$ ", 14);
 	}
 }

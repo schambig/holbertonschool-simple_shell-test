@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* main - Main loop, recieve imput from CLI parse and execute it
+ * main - Main loop, recieve input from CLI parse and execute it
  * @argc: Number of arguments passed to the program
  * @argv: Array of arguments
  * Return: Always 0 on success
@@ -10,7 +10,7 @@ int main(int argc __attribute__((unused)), char **argv __attribute__((unused)))
 {
 	char **arguments = NULL; /* array of tokens get from tokenizer */
 	char *input_stdin = NULL; /* let getline manage memory, so, set to NULL */
-	int status_return = 1, exit_status = 0; /* 1 to stay in the loop, 0 to exit */
+	int status_return = 1, exit_status = 0;
 	size_t size = 0; /* let getline manage memory, so, set to 0 */
 	ssize_t n = 0; /* to check getline return value and EOF */
 
