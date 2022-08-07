@@ -1,7 +1,5 @@
 #include "main.h"
 
-#define BUFSIZE 64 /* constant buffer */
-#define DELIM " \t\n" /* delimiters to check */
 /**
  * hsh_tokenizer - Split the input string into a array of arguments (tokens)
  * @input: String from input (main function)
@@ -21,7 +19,7 @@ char **hsh_tokenizer(char *input)
 		exit(EXIT_FAILURE);
 	}
 	/* tokenize the input string, checking for DELIM and replace them with \0 */
-	token = strtok(input, DELIM);
+	token = strtok(input, DELIM_I);
 	while (token != NULL)
 	{
 		tokens[position] = token;
@@ -42,7 +40,7 @@ char **hsh_tokenizer(char *input)
 			}
 		}
 		/* once memory reallocation, continue processing the input string */
-		token = strtok(NULL, DELIM);
+		token = strtok(NULL, DELIM_I);
 	}
 	/* null terminate the array of tokens */
 	tokens[position] = NULL;
