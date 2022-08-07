@@ -28,6 +28,12 @@ typedef struct choose_builtin
 extern char **environ;
 
 /* main loop */
+/**
+ * main - Main loop, recieve input from CLI parse and execute it
+ * @argc: Number of arguments passed to the program
+ * @argv: Array of arguments
+ * Return: Always 0 on success
+ */
 int main(int argc __attribute__((unused)),
 	 char **argv __attribute__((unused)));
 
