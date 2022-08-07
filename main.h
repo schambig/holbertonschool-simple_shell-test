@@ -28,7 +28,8 @@ typedef struct choose_builtin
 extern char **environ;
 
 /* main loop */
-int main(int argc __attribute__((unused)), char **argv __attribute__((unused)));
+int main(int argc __attribute__((unused)),
+	 char **argv __attribute__((unused)));
 
 /* tokenizers */
 char **hsh_tokenizer(char *input);
