@@ -1,7 +1,5 @@
 #include "main.h"
 
-#define BUFSIZE 64 /* constant buffer */
-#define DELIM ":" /* delimiter to check */
 /**
  * tokenizer_path - Split the environment variable PATH into an array of tokens
  * @input: Pointer to environment variable PATH
@@ -21,7 +19,7 @@ char **tokenizer_path(char *input)
 		exit(EXIT_FAILURE);
 	}
 	/* tokenize the PATH string, checking for DELIM and replace it with \0 */
-	token = strtok(input, DELIM);
+	token = strtok(input, DELIM_P);
 	while (token != NULL)
 	{
 		tokens[position] = token;
@@ -42,7 +40,7 @@ char **tokenizer_path(char *input)
 			}
 		}
 		/* once memory reallocation, continue processing the PATH string */
-		token = strtok(NULL, DELIM);
+		token = strtok(NULL, DELIM_P);
 	}
 	/* null terminate the array of tokens */
 	tokens[position] = NULL;
