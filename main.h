@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef SIMPLE_SHELL_H
+#define SIMPLE_SHELL_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,9 +9,9 @@
 #include <sys/wait.h>
 
 /**
- * struct choose_builtin - Validate the builtin command
- * @name_builtin: name of builtin command
- * @func_builtin: Pointer to the function of builtin command
+ * struct choose_builtin - Builtin commands struct
+ * @name_builtin: Name of builtin command
+ * @func_builtin: Pointer to builtin command functions
  */
 typedef struct choose_builtin
 {
@@ -20,27 +20,35 @@ typedef struct choose_builtin
 
 } choose_builtins_t;
 
-int validate_spaces(char *input);
-char **tokenizer_path(char *input);
-char *validate_input(char **arguments, char **argv);
-char *str_tok(char *buffer,  char *d);
+/* external variable to access the environment list */
 extern char **environ;
-int hsh_execute(char **arguments, char **argv, int *exit_status);
-char **hsh_tokenizer(char *input);
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
-char *str_concat(char *s1, char *s2);
-int hsh_exit(char **args, char *input_stdin, int *exit_status);
+/* main loop */
+int main(int argc __attribute__((unused)), char **argv __attribute__((unused)));
+
+/* tokenizers */
+char **hsh_tokenizer(char *input);
+char **tokenizer_path(char *input);
+
+/* validators */
+char *validate_input(char **arguments, char **argv);
+int validate_spaces(char *input);
+
+/* executors */
+int hsh_execute(char **arguments, char **argv, int *exit_status);
 int hsh_execute_builtins(char **args, char *input_stdin,
 			 char **argv, int *exit_status);
-int hsh_env(char **args, char *input_stdin, int *exit_status);
+
+/* builtin functions */
 int hsh_cd(char **args, char *input_stdin, int *exit_status);
 int hsh_setenv(char **args,  char *input_stdin, int *exit_status);
 int hsh_unsetenv(char **args,  char *input_stdin, int *exit_status);
+int hsh_env(char **args, char *input_stdin, int *exit_status);
+int hsh_exit(char **args, char *input_stdin, int *exit_status);
 
-char *_getenv(char *name);
+/* helper functions */
 void sigintH(int signum);
-
 char *str_concat(char *s1, char *s2);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
-#endif /*MAIN_H*/
+#endif /* SIMPLE_SHELL_H */
