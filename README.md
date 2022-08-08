@@ -15,6 +15,7 @@
 - [Authors](#authors)
 
 ## Description
+The Simple Shell is a simple UNIX command interpreter written entirely in C. The program runs based on bash commands obtained from the input stream by the user. Any text seperated by a single space is considered to be an argument. The respective command typed by the user is then executed as if in a UNIX shell.
 
 ## Flowchart
 
