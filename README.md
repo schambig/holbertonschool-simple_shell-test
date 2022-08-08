@@ -20,20 +20,21 @@ Any text seperated by a any number of spaces, tabs or a combination of both is c
 The respective command typed by the user is then parsed and executed as if in a UNIX shell.
 
 **Basic lifetime of a shell**
-* Startup the shell
-* Wait for user input
-* Parse user input
-* Execute the command and return the result
-* Go back to step 2
-You could terminate the shell anytime, just type in the prompt the `exit` command or `Ctrl-D` which is interpreted as an end-of-file `EOF`
+1. Startup the shell
+2. Wait for user input
+3. Parse user input
+4. Execute the command and return the result
+4. Go back to step 2
+* You could terminate the shell anytime, just type in the prompt the `exit` command or `Ctrl-D` which is interpreted as an end-of-file `EOF`
 
 ## Flowchart
 
 ## File structure
+This table contains a brief description of the working files of the project, click on the names to get the source code.
 
 | File | Content | Description |
 | --- | --- | --- |
-| [main.h](main.h) | <pre>header files</pre> | <pre>Contain the structure, prototypes, macros and<br>external variable of the project.</pre> |
+| [main.h](main.h) | <pre>header of the project</pre> | <pre>Contain the structure, prototypes, macros and<br>external variable of the project.</pre> |
 | [main_loop.c](main_loop.c) | <pre>int main();</pre> | <pre>Main loop, recieve input from the Command Line Interface<br>parse and execute it.</pre> |
 | [tokenizers.c](tokenizers.c) | <pre>char **hsh_tokenizer();<br>char **tokenizer_path();</pre> | <pre>Split the input string into a array of tokens.<br>Split the environment variable PATH into an array of tokens.</pre> |
 | [validators.c](validators.c) | <pre>char *validate_input();<br>int validate_spaces();</pre> | <pre>Validate if PATH exists<br>Validate spaces, tabs and line breaks.</pre> |
@@ -42,6 +43,11 @@ You could terminate the shell anytime, just type in the prompt the `exit` comman
 | [helper_functions.c](helper_functions.c) | <pre>void sigintH();<br>char *str_concat();<br>void *_realloc();</pre> | <pre>Handles SIGINT (CTRL + C).<br>Concatenate two strings.<br>Reallocate a memory block.</pre> |
 
 ## System and Library calls
+This the list of all the System calls `2` and Library calls `3` used in this project, you could read more by clicking on their respective man pages. 
+
+| Name | Manual page |
+| --- | --- | --- |
+| access | [man 2 access](https://man7.org/linux/man-pages/man2/access.2.html) |
 
 ## Installation
 To use this custom _printf function you need `<stdio.h>`, `<stdarg.h>`, `<string.h>` and `<stddef.h>` libraries.
