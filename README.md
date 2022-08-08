@@ -33,12 +33,12 @@ Note that the shell could terminate anytime you type in the prompt the `exit` co
 
 ## File structure
 
-| File | Function name | Description |
+| File | Content | Description |
 | --- | --- | --- |
-| [main.h](main.h) | `is_char` | Print a single character |
-| `s` | `is_string` | Print a string of characters |
-| `d` | `is_integer` | Print a decimal (base 10) number |
-| `i` | `is_integer` | Print an integer in base 10 |
+| [main.h](main.h) | header files | Contain the structure, prototypes, macros and external variable of the project. |
+| [main_loop.c](main_loop.c) | int main(); | Main loop, recieve input from CLI parse and execute it. |
+| [tokenizers.c](tokenizers.c) | <pre>char **hsh_tokenizer();<br>char **tokenizer_path()</pre> | <pre>Split the input string into a array of tokens.<br>Split the environment variable PATH into an array of tokens</pre> |
+
 
 ## System and Library calls
 
