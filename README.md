@@ -25,18 +25,20 @@ The respective command typed by the user is then parsed and executed as if in a 
 * Parse user input
 * Execute the command and return the result
 * Go back to step 2
-(Note that the shell could terminate anytime you type the `exit` command or `Ctrl-D` which is interpreted as an end-of-file (EOF)
+```
+Note that the shell could terminate anytime you type in the prompt the `exit` command or `Ctrl-D` which is interpreted as an end-of-file `EOF`
+```
 
 ## Flowchart
 
 ## File structure
 
-Format Specifier | Function name | Description
---- | --- | ---
-`c` | `is_char` | Print a single character
-`s` | `is_string` | Print a string of characters
-`d` | `is_integer` | Print a decimal (base 10) number
-`i` | `is_integer` | Print an integer in base 10
+| File | Function name | Description |
+| --- | --- | --- |
+| [main.h](main.h) | `is_char` | Print a single character |
+| `s` | `is_string` | Print a string of characters |
+| `d` | `is_integer` | Print a decimal (base 10) number |
+| `i` | `is_integer` | Print an integer in base 10 |
 
 ## System and Library calls
 
