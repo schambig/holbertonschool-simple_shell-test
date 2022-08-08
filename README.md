@@ -25,9 +25,7 @@ The respective command typed by the user is then parsed and executed as if in a 
 * Parse user input
 * Execute the command and return the result
 * Go back to step 2
-```
 You could terminate the shell anytime, just type in the prompt the `exit` command or `Ctrl-D` which is interpreted as an end-of-file `EOF`
-```
 
 ## Flowchart
 
@@ -35,8 +33,8 @@ You could terminate the shell anytime, just type in the prompt the `exit` comman
 
 | File | Content | Description |
 | --- | --- | --- |
-| [main.h](main.h) | <pre>header files</pre> | <pre>Contain the structure, prototypes, macros and external variable of the project.</pre> |
-| [main_loop.c](main_loop.c) | <pre>int main();</pre> | <pre>Main loop, recieve input from the Command Line Interface parse and execute it.</pre> |
+| [main.h](main.h) | <pre>header files</pre> | <pre>Contain the structure, prototypes, macros and<br>external variable of the project.</pre> |
+| [main_loop.c](main_loop.c) | <pre>int main();</pre> | <pre>Main loop, recieve input from the Command Line Interface<br>parse and execute it.</pre> |
 | [tokenizers.c](tokenizers.c) | <pre>char **hsh_tokenizer();<br>char **tokenizer_path();</pre> | <pre>Split the input string into a array of tokens.<br>Split the environment variable PATH into an array of tokens.</pre> |
 | [validators.c](validators.c) | <pre>char *validate_input();<br>int validate_spaces();</pre> | <pre>Validate if PATH exists<br>Validate spaces, tabs and line breaks.</pre> |
 | [executors.c](executors.c) | <pre>int hsh_execute();<br>int hsh_execute_builtins();</pre> | <pre>Fork process and replace the child with a new program.<br>Choose from an array of builtin functions.</pre> |
