@@ -16,7 +16,16 @@
 
 ## Description
 The Simple Shell is a simple UNIX command interpreter written entirely in C. The program runs based on bash commands obtained from the input stream by the user.
-Any text seperated by a single space is considered to be an argument. The respective command typed by the user is then executed as if in a UNIX shell.
+Any text seperated by a any number of spaces, tabs or a combination of both is considered to be an argument.
+The respective command typed by the user is then parsed and executed as if in a UNIX shell.
+
+**Basic lifetime of a shell**
+* Startup the shell
+* Wait for user input
+* Parse user input
+* Execute the command and return the result
+* Go back to step 2
+(Note that the shell could terminate anytime you type the `exit` command or `Ctrl-D` which is interpreted as an end-of-file (EOF)
 
 ## Flowchart
 
