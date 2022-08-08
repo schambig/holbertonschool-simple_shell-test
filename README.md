@@ -43,7 +43,7 @@ This table contains a brief description of the working files of the project, cli
 | [helper_functions.c](helper_functions.c) | <pre>void sigintH();<br>char *str_concat();<br>void *_realloc();</pre> | <pre>Handles SIGINT (CTRL + C).<br>Concatenate two strings.<br>Reallocate a memory block.</pre> |
 
 ## System and Library calls
-This table lists all the System calls `2` and Library calls `3` used in this project, you could read more by clicking on their respective man pages. 
+This table lists all the System calls `2` and Library calls `3` used in this project, you could read more by clicking on their respective manual pages. 
 
 | Name | Manual page | Brief description |
 | --- | --- | --- |
@@ -61,13 +61,11 @@ This table lists all the System calls `2` and Library calls `3` used in this pro
 | `perror` | <pre>[man 3 perror](https://man7.org/linux/man-pages/man3/sys_nerr.3.html)</pre> | perror() produces a message on standard error describing the last error encountered during a call to a system or library function. |
 | `signal` | <pre>[man 2 signal](https://man7.org/linux/man-pages/man2/signal.2.html)</pre> | signal() sets a function to handle signal i.e. a signal handler with signal number, or the address of a programmer-defined function. |
 | `strtok` | <pre>[man 3 strtok](https://man7.org/linux/man-pages/man3/strtok.3.html)</pre> | strtok() breaks a string into a sequence of zero or more nonempty tokens. |
-| `` | <pre>[man ]()</pre> |  |
-| `` | <pre>[man ]()</pre> |  |
-| `` | <pre>[man ]()</pre> |  |
-| `` | <pre>[man ]()</pre> |  |
-| `` | <pre>[man ]()</pre> |  |
-| `` | <pre>[man ]()</pre> |  |
-
+| `waitpid` | <pre>[man 2 waitpid](https://man7.org/linux/man-pages/man2/wait.2.html)</pre> | waitpid() suspends execution of the calling thread until a child specified by pid argument has changed state. |
+| `fprintf` | <pre>[man 3 fprintf](https://man7.org/linux/man-pages/man3/printf.3.html)</pre> | fprintf() sends formatted output to a stream. |
+| `setenv` | <pre>[man 3 setenv](https://man7.org/linux/man-pages/man3/setenv.3.html)</pre> | setenv() adds a variable to the environment. |
+| `unsetenv` | <pre>[man 3 unsetenv](https://man7.org/linux/man-pages/man3/setenv.3.html)</pre> | unsetenv() deletes a variable from the environment. |
+| `write` | <pre>[man 2 write](https://man7.org/linux/man-pages/man2/write.2.html)</pre> | write() writes to a file descriptor. |
 
 ## Installation
 To use this custom _printf function you need `<stdio.h>`, `<stdarg.h>`, `<string.h>` and `<stddef.h>` libraries.
