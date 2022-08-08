@@ -47,7 +47,11 @@ This the list of all the System calls `2` and Library calls `3` used in this pro
 
 | Name | Manual page | Brief description |
 | --- | --- | --- |
-| `access` | `[man 2 access](https://man7.org/linux/man-pages/man2/access.2.html)` | access() checks whether the calling process can access the file pathname.  If pathname is a symbolic link, it is dereferenced. |
+| `access` | <pre>[man 2 access](https://man7.org/linux/man-pages/man2/access.2.html)</pre> | access() checks whether the calling process can access the file pathname.  If pathname is a symbolic link, it is dereferenced. |
+| `chdir` | <pre>[man 2 chdir](https://man7.org/linux/man-pages/man2/chdir.2.html)</pre> | chdir() changes the current working directory of the calling process to the directory specified in one of its parameters. |
+
+
+
 
 ## Installation
 To use this custom _printf function you need `<stdio.h>`, `<stdarg.h>`, `<string.h>` and `<stddef.h>` libraries.
