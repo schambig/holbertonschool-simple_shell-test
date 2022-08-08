@@ -9,7 +9,7 @@
 - [Description](#description)
 - [Flowchart](#flowchart)
 - [File Structure](#file-structure)
-- [System/Library calls](#system/library-calls)
+- [System/Library calls](#system-and-library-calls)
 - [Installation](#installation)
 - [Examples](#examples)
 - [Authors](#authors)
@@ -27,7 +27,7 @@ Format Specifier | Function name | Description
 `d` | `is_integer` | Print a decimal (base 10) number
 `i` | `is_integer` | Print an integer in base 10
 
-## System/Library calls
+## System and Library calls
 
 ## Installation
 To use this custom _printf function you need `<stdio.h>`, `<stdarg.h>`, `<string.h>` and `<stddef.h>` libraries.
