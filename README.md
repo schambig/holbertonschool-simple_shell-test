@@ -46,7 +46,7 @@ This table contains a brief description of the working files of the project, cli
 This the list of all the System calls `2` and Library calls `3` used in this project, you could read more by clicking on their respective man pages. 
 
 | Name | Manual page |
-| --- | --- | --- |
+| --- | --- |
 | access | [man 2 access](https://man7.org/linux/man-pages/man2/access.2.html) |
 
 ## Installation
