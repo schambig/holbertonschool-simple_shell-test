@@ -36,11 +36,12 @@ You could terminate the shell anytime, just type in the prompt the `exit` comman
 | File | Content | Description |
 | --- | --- | --- |
 | [main.h](main.h) | <pre>header files</pre> | <pre>Contain the structure, prototypes, macros and external variable of the project.</pre> |
-| [main_loop.c](main_loop.c) | <pre>int main();</pre> | <pre>Main loop, recieve input from CLI parse and execute it.</pre> |
+| [main_loop.c](main_loop.c) | <pre>int main();</pre> | <pre>Main loop, recieve input from the Command Line Interface parse and execute it.</pre> |
 | [tokenizers.c](tokenizers.c) | <pre>char **hsh_tokenizer();<br>char **tokenizer_path();</pre> | <pre>Split the input string into a array of tokens.<br>Split the environment variable PATH into an array of tokens.</pre> |
-| [validators.c](validators.c) | <pre>()char *validate_input();<br>int validate_spaces()</pre> | <pre>Validate if PATH exists<br>Validate spaces, tabs and line breaks.</pre> |
+| [validators.c](validators.c) | <pre>char *validate_input();<br>int validate_spaces();</pre> | <pre>Validate if PATH exists<br>Validate spaces, tabs and line breaks.</pre> |
 | [executors.c](executors.c) | <pre>int hsh_execute();<br>int hsh_execute_builtins();</pre> | <pre>Fork process and replace the child with a new program.<br>Choose from an array of builtin functions.</pre> |
-| [.c](.c) | <pre><br></pre> | <pre><br></pre> |
+| [builtin_functions.c](builtin_functions.c) | <pre>int hsh_cd();<br>int hsh_setenv();<br>int hsh_unsetenv();<br>int hsh_env();<br>int hsh_exit();</pre> | <pre>Change directory.<br>Change or add and environment variable.<br>Delete an environment variable from the environment.<br>Print the environment variables list.<br>Terminate the main loop and exit the shell.</pre> |
+| [helper_functions.c](helper_functions.c) | <pre>void sigintH();<br>char *str_concat();<br>void *_realloc();</pre> | <pre>Handles SIGINT (CTRL + C).<br>Concatenate two strings.<br>Reallocate a memory block.</pre> |
 
 ## System and Library calls
 
