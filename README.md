@@ -27,7 +27,7 @@ Format Specifier | Function name | Description
 `d` | `is_integer` | Print a decimal (base 10) number
 `i` | `is_integer` | Print an integer in base 10
 
-## System/library calls
+## System/Library calls
 
 ## Installation
 To use this custom _printf function you need `<stdio.h>`, `<stdarg.h>`, `<string.h>` and `<stddef.h>` libraries.
@@ -55,14 +55,14 @@ $ gcc *.c [your_code] -o [outfile_name]
 
 **Character**
 * Input:
-* ```
-* _printf("%c is fun!\n", 'C');
-* ```
-* 
+```
+_printf("%c is fun!\n", 'C');
+```
+ 
 * Output:
-* ```
-* C is fun!
-* ```
+```
+C is fun!
+```
 
 ## Authors
 | [<img src="https://avatars.githubusercontent.com/u/98305125?v=4" width=115><br><sub> Johana Herrera </sub>](https://github.com/Johana-RHP) | [<img src="https://avatars.githubusercontent.com/u/103861356?v=4" width=115><br><sub> Drixner Condor </sub>](https://github.com/Drixner) | [<img src="https://avatars.githubusercontent.com/u/98289735?v=4" width=115><br><sub> Salomón Chambi </sub>](https://github.com/schambig) |
