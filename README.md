@@ -11,7 +11,7 @@
 - [File Structure](#file-structure)
 - [System/Library calls](#system-and-library-calls)
 - [Installation](#installation)
-- [Examples](#example-of-use)
+- [Example of use](#example-of-use)
 - [Authors](#authors)
 
 ## Description
