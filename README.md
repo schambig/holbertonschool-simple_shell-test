@@ -68,24 +68,35 @@ This table lists all the System calls `2` and Library calls `3` used in this pro
 | `write` | <pre>[man 2 write](https://man7.org/linux/man-pages/man2/write.2.html)</pre> | write() writes to a file descriptor. |
 
 ## Installation
-To use this custom _printf function you need `<stdio.h>`, `<stdarg.h>`, `<string.h>` and `<stddef.h>` libraries.
 
 First, clone this repository to your local machine:
 
 ```
-$ git clone https://github.com/schambig/holbertonschool-printf.git
+$ git clone https://github.com/schambig/holbertonschool-simple_shell
 ```
 
 Then, go to the repository folder:
 
 ```
-$ cd holbertonschool-printf
+$ cd holbertonschool-simple_shell
 ```
 
-Finally, you can compile it with your C source code:
+Compile it with the following command:
 
 ```
-$ gcc *.c [your_code] -o [outfile_name]
+$ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+```
+
+Now you can run the shell in interactive mode:
+
+```
+$ ./hsh
+```
+
+Or you can run it in non-interactive mode:
+
+```
+$ echo "ls -la" | ./hsh
 ```
 
 ## Examples
