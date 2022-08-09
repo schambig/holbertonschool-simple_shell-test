@@ -11,7 +11,7 @@
 - [File Structure](#file-structure)
 - [System/Library calls](#system-and-library-calls)
 - [Installation](#installation)
-- [Examples](#examples)
+- [Examples](#example-of-use)
 - [Authors](#authors)
 
 ## Description
@@ -99,18 +99,35 @@ Or you can run it in non-interactive mode:
 $ echo "ls -la" | ./hsh
 ```
 
-## Examples
+## Example of Use
+Run the executable in your terminal after compiling:
+```
+#(ಠ_ಠ)->$ ls
+AUTHORS              executors.c         hsh     main_loop.c         README.md     validators.c
+builtin_functions.c  helper_functions.c  main.h  man_1_simple_shell  tokenizers.c
+#(ಠ_ಠ)->$ pwd
+/root/githubRepos/holbertonschool-simple_shell
+#(ಠ_ಠ)->$
+```
 
-
-**Character**
-* Input:
 ```
-_printf("%c is fun!\n", 'C');
-```
- 
-* Output:
-```
-C is fun!
+#(ಠ_ಠ)->$ ls -la
+total 72
+drwxr-xr-x  3 root root   232 Aug  7 23:01 .
+drwxr-xr-x 14 root root  4096 Aug  8 12:22 ..
+-rw-r--r--  1 root root   216 Aug  7 19:00 AUTHORS
+-rw-r--r--  1 root root  4215 Aug  7 23:00 builtin_functions.c
+-rw-r--r--  1 root root  2456 Aug  7 23:00 executors.c
+drwxr-xr-x  8 root root   201 Aug  7 23:00 .git
+-rw-r--r--  1 root root  1567 Aug  7 23:00 helper_functions.c
+-rwxr-xr-x  1 root root 22744 Aug  7 23:01 hsh
+-rw-r--r--  1 root root  1919 Aug  7 23:00 main.h
+-rw-r--r--  1 root root  1782 Aug  7 23:00 main_loop.c
+-rw-r--r--  1 root root  3703 Aug  7 18:58 man_1_simple_shell
+-rw-r--r--  1 root root    29 Aug  7 18:36 README.md
+-rw-r--r--  1 root root  2517 Aug  7 23:00 tokenizers.c
+-rw-r--r--  1 root root  1749 Aug  7 23:00 validators.c
+#(ಠ_ಠ)->$
 ```
 
 ## Authors
