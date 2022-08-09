@@ -9,7 +9,7 @@
 - [Description](#description)
 - [Flowchart](#flowchart)
 - [File Structure](#file-structure)
-- [System/Library calls](#system-and-library-calls)
+- [System and Library calls](#system-and-library-calls)
 - [Installation](#installation)
 - [Example of Use](#example-of-use)
 - [Authors](#authors)
