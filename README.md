@@ -2,17 +2,8 @@
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
 
 # Simple shell
-```stl
-facet normal ni nj nk
-    outer loop
-        vertex v1x v1y v1z
-        vertex v2x v2y v2z
-        vertex v3x v3y v3z
-    endloop
-endfacet
-```
 
-![Simple shell](https://i.imgur.com/tfeTUGr.jpg)
+![Simple shell](https://i.imgur.com/9m8edhj.jpg)
 
 # Table of Contents
 - [Description](#description)
