@@ -7,7 +7,6 @@
 
 # Table of Contents
 - [Description](#description)
-- [Flowchart](#flowchart)
 - [File Structure](#file-structure)
 - [System and Library calls](#system-and-library-calls)
 - [Installation](#installation)
@@ -26,8 +25,6 @@ The respective command typed by the user is then parsed and executed as if in a 
 4. Execute the command and return the result
 4. Go back to step 2
 * You could terminate the shell anytime, just type in the prompt the `exit` command or `Ctrl-D` which is interpreted as an end-of-file `EOF`
-
-## Flowchart
 
 ## File structure
 This table contains a brief description of the working files of the project, click on the names to get the source code.
