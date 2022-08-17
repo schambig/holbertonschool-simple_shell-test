@@ -4,12 +4,6 @@
 # Simple shell
 
 # Table of Contents
-- [Description](#description)
-- [File Structure](#file-structure)
-- [System and Library calls](#system-and-library-calls)
-- [Installation](#installation)
-- [Example of Use](#example-of-use)
-- [Authors](#authors)
 
 ## Description
 
